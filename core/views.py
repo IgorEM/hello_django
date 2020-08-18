@@ -6,3 +6,6 @@ from django.shortcuts import render, HttpResponse
 def hello(request, nome, idade):
     return HttpResponse('<h1>Hello {} de {} anos </h1>'.format(nome, idade))
 
+def soma(request, n1, n2):
+    s = n1 + n2
+    return HttpResponse('<h1>{} + {} = {}</h1>'.format(n1, n2, s))
