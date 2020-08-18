@@ -21,7 +21,8 @@ from core import views #importou views de core
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<nome>/<int:idade>', views.hello)
+    path('hello/<nome>/<int:idade>', views.hello),
+    path('soma/<int:n1>/<int:n2>', views.soma)
 ]
 #esse path('hello/',) tem que retornar pra algum metodo que retorna algo na tela
 #esse metodo vamos criar no view do core
